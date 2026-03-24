@@ -5,9 +5,7 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox, scrolledtext, font, simpledialog
 
 
-# ══════════════════════════════════════════════
 #  COLOUR / STYLE CONSTANTS
-# ══════════════════════════════════════════════
 
 DARK_BG      = "#1e1e2e"
 PANEL_BG     = "#181825"
@@ -33,9 +31,6 @@ UI_FONT      = ("Segoe UI", 10)
 UI_FONT_B    = ("Segoe UI", 10, "bold")
 
 SAMPLE_CODE = """\
-/* SimpleInt example program
-   Computes sum and product of two inputs */
-
 var a;
 var b;
 var sum;
@@ -52,9 +47,7 @@ output product;
 """
 
 
-# ══════════════════════════════════════════════
 #  SYNTAX HIGHLIGHTER
-# ══════════════════════════════════════════════
 
 class SyntaxHighlighter:
 
