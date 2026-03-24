@@ -1,2 +1,0 @@
-# simpleCompiler
-Final Project
