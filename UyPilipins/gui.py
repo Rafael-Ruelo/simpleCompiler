@@ -31,19 +31,19 @@ UI_FONT      = ("Segoe UI", 10)
 UI_FONT_B    = ("Segoe UI", 10, "bold")
 
 SAMPLE_CODE = """\
-var a;
-var b;
-var sum;
-var product;
+lalagyan a;
+lalagyan b;
+lalagyan sum;
+lalagyan product;
 
-input a;
-input b;
+ilagay a;
+ilagay b;
 
 sum = a + b;
 product = a * b;
 
-output sum;
-output product;
+kinalabasan sum;
+kinalabasan product;
 """
 
 
