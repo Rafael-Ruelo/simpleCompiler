@@ -1,0 +1,53 @@
+program        = { statement } ;
+
+statement      = var_decl
+               | assign_stmt
+               | input_stmt
+               | output_stmt ;
+
+var_decl       = "var" , identifier , ";" ;
+
+assign_stmt    = identifier , "=" , expression , ";" ;
+
+input_stmt     = "input" , identifier , ";" ;
+
+output_stmt    = "output" , expression , ";" ;
+
+expression     = term , { ( "+" | "-" ) , term } ;
+
+term           = factor , { ( "*" | "/" ) , factor } ;
+
+factor         = "(" , expression , ")"    
+               | unary_minus              
+               | integer                  
+               | identifier ;             
+
+unary_minus    = "-" , factor ;
+
+integer        = digit , { digit } ;
+
+identifier     = letter_or_us , { letter_or_us | digit } ;
+
+letter_or_us   = letter | "_" ;
+
+letter         = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i"
+               | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r"
+               | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+               | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I"
+               | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R"
+               | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" ;
+
+digit          = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+
+comment        = "/*" , { any_character - "*/" } , "*/" ;
+
+keyword        = "var" | "input" | "output" ;
+
+operator       = "+" | "-" | "*" | "/" | "=" ;
+
+semicolon      = ";" ;
+lparen         = "(" ;
+rparen         = ")" ;
+
+(* Spaces, tabs, and newlines between tokens are insignificant *)
+whitespace     = " " | "\t" | "\n" | "\r" ;
