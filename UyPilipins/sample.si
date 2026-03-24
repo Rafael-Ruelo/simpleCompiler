@@ -1,32 +1,23 @@
-/* Declare all variables first */
-var a;
-var b;
-var sum;
-var diff;
-var product;
-var quotient;
-var complex_result;
+lalagyan a;
+lalagyan b;
+lalagyan sum;
+lalagyan diff;
+lalagyan product;
+lalagyan quotient;
+lalagyan complex_result;
 
-/* Read two integers from the user */
-input a;
-input b;
+ilagay a;
+ilagay b;
 
-/* Basic arithmetic operations */
 sum     = a + b;
 diff    = a - b;
 product = a * b;
-
-/* Integer division (truncating) */
 quotient = a / b;
 
-/* Complex expression with operator precedence:
-   a^2 + 2ab + b^2  ≡  (a+b)^2
-   Computed as: a*a + 2*a*b + b*b */
 complex_result = a * a + 2 * a * b + b * b;
 
-/* Output all results */
-output sum;
-output diff;
-output product;
-output quotient;
-output complex_result;
+kinalabasan sum;
+kinalabasan diff;
+kinalabasan product;
+kinalabasan quotient;
+kinalabasan complex_result;
